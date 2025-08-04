@@ -16,7 +16,6 @@ def aior1():
 
 @app.route("/2")
 def aior2():
-    current_score = 10
     return render_template("2.html")
 
 @app.route("/3")

@@ -1,0 +1,38 @@
+.indextitle{
+    font-size: 45px;
+    padding-top:12ch;
+    text-align:center;
+}
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    }
+.centerbutton {
+    justify-self:center; 
+    justify-items: center;
+    align-content: center; 
+    text-align:center;
+}
+
+.button1 {
+    background-color:blueviolet;
+    color:whitesmoke;
+    margin-top:5ch;
+    margin-left:8ch;
+    border:1px;
+    padding: 6px;
+    border: 9ch;
+    border-color: aqua;
+   
+}
+
+/* scam pages */
+.scamA{
+    color:blue;
+}
+.scamB{
+    color:purple;
+}
