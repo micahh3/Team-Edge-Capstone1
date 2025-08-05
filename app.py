@@ -5,6 +5,7 @@ ai_list =["aigirl.jpeg", "aiguy.jpeg","aiwoman"]
 
 real_list =["realguy.jpeg","almondreal.webp","realguy3.jpeg"]
 
+scorevar = 0
 
 @app.route("/")
 def index():
@@ -12,31 +13,48 @@ def index():
 
 @app.route("/1")
 def aior1():
-    score = 0
-    return render_template("1.html", score = score)
+    return render_template("1.html")
 
-@app.route("/2")
-def aior2():
+@app.route("/2/<answer>")
+def aior2(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("2.html")
 
-@app.route("/3")
-def aior3():
+@app.route("/3/<answer>")
+def aior3(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("3.html")
 
-@app.route("/4")
-def aior4():
+@app.route("/4<answer>")
+def aior4(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("4.html")
 
-@app.route("/5")
-def aior5():
+@app.route("/5<answer>")
+def aior5(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("5.html")
 
-@app.route("/6")
-def aior6():
+@app.route("/6<answer>")
+def aior6(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("6.html")
 
-@app.route("/7")
-def aior7():
+@app.route("/7<answer>")
+def aior7(answer):
+    global scorevar
+    if answer == "ai": #handles previous pages' logic
+        scorevar = scorevar + 1
     return render_template("7.html")
 
 @app.route("/score")
