@@ -5,14 +5,15 @@ ai_list =["aigirl.jpeg", "aiguy.jpeg","aiwoman"]
 
 real_list =["realguy.jpeg","almondreal.webp","realguy3.jpeg"]
 
+
 @app.route("/")
 def index():
     return render_template("index.html")
 
 @app.route("/1")
 def aior1():
-
-    return render_template("1.html")
+    score = 0
+    return render_template("1.html", score = score)
 
 @app.route("/2")
 def aior2():
