@@ -8,7 +8,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 34%;
     }
 .centerbutton {
     justify-self:center; 
@@ -19,20 +19,20 @@
 
 .button1 {
     background-color:blueviolet;
+    font-size:30px;
     color:whitesmoke;
-    margin-top:5ch;
-    margin-left:8ch;
-    border:1px;
-    padding: 6px;
-    border: 9ch;
-    border-color: aqua;
-   
+    margin-top:2ch;
+    margin-right: 20px;
+    margin-left: 20px;
+    align-content:center;
+    padding:5px;
+    border-color:blueviolet;
 }
 
 /* scam pages */
 .scamA{
-    color:blue;
+    color:red;
 }
 .scamB{
-    color:purple;
+    color:yellow;
 }

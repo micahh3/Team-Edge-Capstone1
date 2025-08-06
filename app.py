@@ -18,48 +18,51 @@ def aior1():
 @app.route("/2/<answer>")
 def aior2(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "ai": #handles previous pages' logic/ Page 1 answer
         scorevar = scorevar + 1
     return render_template("2.html")
 
 @app.route("/3/<answer>")
 def aior3(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "ai": #handles previous pages' logic/ Page 2 answer
         scorevar = scorevar + 1
     return render_template("3.html")
 
-@app.route("/4<answer>")
+@app.route("/4/<answer>")
 def aior4(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "real": #handles previous pages' logic/ Page 3 answer
         scorevar = scorevar + 1
     return render_template("4.html")
 
-@app.route("/5<answer>")
+@app.route("/5/<answer>")
 def aior5(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "ai": #handles previous pages' logic/ Page 4 answer
         scorevar = scorevar + 1
     return render_template("5.html")
 
-@app.route("/6<answer>")
+@app.route("/6/<answer>")
 def aior6(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "real": #handles previous pages' logic/ Page 5 answer
         scorevar = scorevar + 1
     return render_template("6.html")
 
-@app.route("/7<answer>")
+@app.route("/7/<answer>")
 def aior7(answer):
     global scorevar
-    if answer == "ai": #handles previous pages' logic
+    if answer == "real": #handles previous pages' logic/ Page 6 answer
         scorevar = scorevar + 1
     return render_template("7.html")
 
-@app.route("/score")
-def score():
-    return render_template("score.html")
+@app.route("/score/<answer>")
+def score(answer):
+    global scorevar
+    if answer == "ai":
+            scorevar = scorevar + 1
+    return render_template("score.html") #find way to print finalscore on html page
 
 
 #scamming pages lolololololololol maybe put cashapp so they actually give me money
