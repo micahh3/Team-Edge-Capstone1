@@ -1,7 +1,13 @@
 .indextitle{
     font-size: 45px;
+    color:white;
     padding-top:12ch;
     text-align:center;
+}
+
+.colortitle{
+    color:white;
+    font-size:55px;
 }
 
 .center{
@@ -19,7 +25,7 @@
 
 .button1 {
     background-color:blueviolet;
-    font-size:30px;
+    font-size:25px;
     color:whitesmoke;
     margin-top:2ch;
     margin-right: 20px;
@@ -29,10 +35,45 @@
     border-color:blueviolet;
 }
 
-/* scam pages */
-.scamA{
-    color:red;
+
+
+/* scam buttons positioning*/
+#topleft{
+    position:absolute;
+    margin:10px;
+    left: 10px;
+    top: 10px;
 }
-.scamB{
+#topright{
+    display:flex;
+    position:absolute;
+    margin:10px;
+    right: 10px;
+    top: 10px;
+}
+#bottomleft{
+    position:absolute;
+    margin:10px;
+    left: 10px;
+    bottom: 10px;
+}
+#bottomright{
+    position:absolute;
+    margin:10px;
+    right: 10px;
+    bottom: 10px;
+}
+/* scam buttons styling */
+.scamstyling{
+    background-color:blue;
+    padding: 20px;
+}
+
+.textstyle{
+    font-size:35px;
     color:yellow;
+}
+
+#indexbg {
+    background-image: url(/static/shockgif.gif);
 }
