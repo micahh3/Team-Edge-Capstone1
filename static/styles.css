@@ -2,6 +2,18 @@
     background-image: url(/static/shockgif.gif);
 }
 
+#aboutprojbg{
+    background-image: url(/static/Minions.jpeg);
+    background-repeat: no-repeat;
+    background-size:105vw;
+    background-position:center;
+}
+
+.aboutmetext{
+    background-color: blanchedalmond;
+    color:black;
+    text-align:cent;
+}
 #scam1bg{
     background-image: url(/static/_.jpeg);
     background-repeat: no-repeat;
@@ -16,9 +28,14 @@
     background-size:cover;
 }
 .scamtext{
+    background-color:blueviolet;
     color:blanchedalmond;
 }
-
+.scoretxt{
+    position: absolute;
+    top: 10vw;
+    left: 35vw;
+}
 #scorebg {
     background-image: url(/static/completion.jpeg);
     background-repeat: no-repeat;

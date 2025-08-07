@@ -66,6 +66,10 @@ def score(answer):
             scorevar = scorevar + 1
     return render_template("score.html",scorevar = scorevar) #find way to print finalscore on html page
 
+@app.route("/aboutmyproject")
+def aboutme():
+    return render_template("aboutmyproject.html")
+
 
 #scamming pages lolololololololol maybe put cashapp so they actually give me money
 @app.route("/scam1.html")
