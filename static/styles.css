@@ -5,15 +5,27 @@
 #scam1bg{
     background-image: url(/static/_.jpeg);
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size:105vw;
     background-position:center;
 }
 
 #scam2bg{
     background-image: url(/static/_\ copy.jpeg);
     background-repeat: no-repeat;
+    background-size:105vw;
     background-size:cover;
 }
+.scamtext{
+    color:blanchedalmond;
+}
+
+#scorebg {
+    background-image: url(/static/completion.jpeg);
+    background-repeat: no-repeat;
+    background-size:100vw;
+    background-position:center;
+}
+
 .indextitle{
     font-size: 45px;
     color:white;
@@ -23,7 +35,7 @@
 
 .colortitle{
     color:rgb(58, 58, 58);
-    font-size:60px;
+    font-size:65px;
     animation:colorchange 3s infinite;
 }
 
@@ -32,6 +44,8 @@
     margin-left: auto;
     margin-right: auto;
     width: 34%;
+    border: 3px solid gray;
+    border-radius: 25px;
     }
 .centerbutton {
     justify-self:center; 

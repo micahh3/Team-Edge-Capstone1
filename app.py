@@ -9,6 +9,8 @@ scorevar = 0
 
 @app.route("/")
 def index():
+    global scorevar
+    scorevar = 0
     return render_template("index.html")
 
 @app.route("/1")
@@ -62,7 +64,7 @@ def score(answer):
     global scorevar
     if answer == "ai":
             scorevar = scorevar + 1
-    return render_template("score.html") #find way to print finalscore on html page
+    return render_template("score.html",scorevar = scorevar) #find way to print finalscore on html page
 
 
 #scamming pages lolololololololol maybe put cashapp so they actually give me money
