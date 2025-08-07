@@ -1,3 +1,19 @@
+#indexbg {
+    background-image: url(/static/shockgif.gif);
+}
+
+#scam1bg{
+    background-image: url(/static/_.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+#scam2bg{
+    background-image: url(/static/_\ copy.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+}
 .indextitle{
     font-size: 45px;
     color:white;
@@ -6,8 +22,9 @@
 }
 
 .colortitle{
-    color:white;
-    font-size:55px;
+    color:rgb(58, 58, 58);
+    font-size:60px;
+    animation:colorchange 3s infinite;
 }
 
 .center{
@@ -63,17 +80,39 @@
     right: 10px;
     bottom: 10px;
 }
+
 /* scam buttons styling */
 .scamstyling{
     background-color:blue;
-    padding: 20px;
+    padding: 25px;
+    animation:colorchange 5s infinite;
+    /* color changing animation ^ */
 }
-
+@keyframes colorchange{
+    0% {background:white;}
+    5% {background:red;}
+    10% {background:orange;}
+    15% {background:yellow;}
+    20% {background:yellowgreen;}
+    25% {background:green;}
+    30% {background:blue;}
+    35% {background:blueviolet;}
+    40% {background:purple;}
+    45% {background:pink;}
+    50% {background:white;}
+    55% {background:white;}
+    60% {background:red;}
+    65% {background:orange;}
+    70% {background:yellow;}
+    75% {background:yellowgreen;}
+    80% {background:green;}
+    85% {background:blue;}
+    90% {background:blueviolet;}
+    95% {background:purple;}
+    100% {background:pink;}
+}
 .textstyle{
     font-size:35px;
     color:yellow;
 }
 
-#indexbg {
-    background-image: url(/static/shockgif.gif);
-}
