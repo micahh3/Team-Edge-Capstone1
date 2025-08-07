@@ -57,6 +57,7 @@
 }
 
 .center{
+    margin-top:8ch;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -147,3 +148,10 @@
     color:yellow;
 }
 
+.foot{
+    color:yellowgreen;
+    text-align: center;
+    position:absolute;
+    margin:10px;
+    bottom: 10px;
+}
