@@ -1,11 +1,21 @@
 from flask import Flask, redirect, url_for, request, render_template
 app = Flask(__name__)
+import playsound
 
 ai_list =["aigirl.jpeg", "aiguy.jpeg","aiwoman"]
 
 real_list =["realguy.jpeg","almondreal.webp","realguy3.jpeg"]
 
-scorevar = 0
+initialval = 0
+scorevar = initialval
+pagenum = 7
+#Keep checking when scorevar changes; thats when you know user got correct answer. Inside the loop, if changed == true; Play sound to notify the user got the correct answer. 
+
+
+for x in pagenum:
+    if scorevar != initialval && pagenum :
+        
+    
 
 @app.route("/")
 def index():
@@ -36,6 +46,7 @@ def aior4(answer):
     global scorevar
     if answer == "real": #handles previous pages' logic/ Page 3 answer
         scorevar = scorevar + 1
+        #playsong 
     return render_template("4.html")
 
 @app.route("/5/<answer>")
